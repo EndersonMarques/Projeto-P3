@@ -1,17 +1,35 @@
-public class Employee {
-    String name;
-    String address;
-    double timeCard;
+import java.util.Scanner;
 
-    Employee(String name, String address, double timeCard){
-        this.name = name;
-        this.address = address;
-        this.timeCard = timeCard;
+public class Employee {
+    
+    String Name, Adress;
+    TypeEmployee Type = new TypeEmployee();
+
+    Employee(String Name, String Adress, TypeEmployee Type){
+
+        String name =  this.Name;
+        String adress =  this.Adress;
+        TypeEmployee type = this.Type;
+
+    }
+    
+    private static void CreateNewEmployee(){
+
     }
 
-    String printEmployeeInfo(){
-        return "Name: " + this.name +
-                "\nAddress : " + this.address +
-                "\nTime Card: " + this.timeCard;
+    private static void DeleteEmployee(){
+
+    }
+
+    private static void PostPointCard(){
+
+    }
+
+    private static void PostServiceCharge(){
+
+    }
+
+    private static void UpdateNewEmployee(){
+
     }
 }
