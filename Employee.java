@@ -1,35 +1,62 @@
-import java.util.Scanner;
-
 public class Employee {
+    //  Atributos
+    //      - Nome, Endereço e Tipo de Funcionario !!
     
-    String Name, Adress;
-    TypeEmployee Type = new TypeEmployee();
+    private int Id;
+    private String Name;
+    private String Adress;
+    private String TypeEmployee;
+    private int PointCardNumber;
 
-    Employee(String Name, String Adress, TypeEmployee Type){
+    //Construtores
+    public Employee(){
 
-        String name =  this.Name;
-        String adress =  this.Adress;
-        TypeEmployee type = this.Type;
+    }
 
+    public Employee(String Name, String Adress, String TypeEmployee){
+        this.Name = Name;
+        this.Adress = Adress;
+        this.TypeEmployee = TypeEmployee;
     }
     
-    private static void CreateNewEmployee(){
-
+    //Metodos de Acesso - Getters - Setters
+    public String getName(){
+        return Name;
+    }
+    public void setName(String Name){
+        this.Name= Name;
+    }
+    //
+    public String getAdress(){
+        return Adress;
+    }
+    public void setAdress(String Adress){
+        this.Adress= Adress;
+    }
+    //
+    public String getTypeEmployee(){
+        return TypeEmployee;
+    }
+    public void setTypeEmployee(String TypeEmployee){
+        this.TypeEmployee= TypeEmployee;
+    }
+    //
+    public int getId() {
+        return Id;
+    }
+    public void setId(int id) {
+        this.Id = id;
+    }
+    //
+    public void setPointCardNumber(int pointCardNumber) {
+        this.PointCardNumber = pointCardNumber;
     }
 
-    private static void DeleteEmployee(){
-
+    public String imprimir(){
+        return  "Hash : " + Id +
+                "\nNome : " + Name +
+                "\nEndereço : " + Adress +
+                "\nTipo : " + TypeEmployee;
     }
-
-    private static void PostPointCard(){
-
-    }
-
-    private static void PostServiceCharge(){
-
-    }
-
-    private static void UpdateNewEmployee(){
-
-    }
+    
 }
