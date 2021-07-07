@@ -17,6 +17,7 @@ public class Menu {
             System.out.println("5 - Lançar uma taxa de serviço");
             System.out.println("6 - Alterar detalhes do empregado");
             System.out.println("9999 - Listar");
+            System.out.println("9998 - Listar Cartões");
     
             op =  scan.nextInt();
             
